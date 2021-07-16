@@ -21,16 +21,8 @@ def Write_file(filename, lines):
 	with open(filename, 'w') as w:
 		for line in lines:
 			w.write(line + '\n')
-	
-
-	
-
-
-
-
 def main():
     lines = Read_file('input.txt')
     lines = Convert_file(lines)
     Write_file('output.txt', lines)
-    
 main()
